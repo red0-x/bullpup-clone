@@ -18,9 +18,8 @@ Paths are relative, so the site also works from a subdirectory
 
 ## Deploy
 
-`.github/workflows/pages.yml` publishes the repo to GitHub Pages on every
-push to `main`. Enable Pages with source "GitHub Actions" once in repo
-settings.
+GitHub Pages is configured to build from the `main` branch root. Pushing to
+`main` republishes the site at <https://red0-x.github.io/bullpup-clone/>.
 
 ## Notes
 
