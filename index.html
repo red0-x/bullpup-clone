@@ -101,7 +101,7 @@
     </div>
   </section>
 
-  <div class="ticker" data-testid="landing-marquee" aria-label="Trades covered">
+  <div class="ticker" data-testid="landing-marquee" role="group" aria-label="Trades covered">
     <div class="ticker__track">
       <div class="ticker__group">
         <span class="ticker__item">Pools</span>
@@ -124,6 +124,7 @@
         <span class="ticker__item">Locksmith</span>
       </div>
     </div>
+    <button class="ticker__pause mono" type="button" aria-pressed="false">Pause</button>
   </div>
 
   <section class="section" id="problem">
@@ -168,7 +169,7 @@
       <div class="section__head">
         <div data-reveal>
           <p class="mono eyebrow">How it works</p>
-          <h2>Four steps.<br><span class="serif">One calm host.</span></h2>
+          <h2>Four steps.<br><span class="serif">One clear call.</span></h2>
         </div>
         <p data-reveal style="--d:80ms">
           Built for the moment something breaks, not for a spreadsheet you update
@@ -199,7 +200,7 @@
           <div class="step__num mono"><span>Step 04</span></div>
           <h3>Close the loop</h3>
           <p>Showed up? On time? Every outcome updates the bench, so the next call gets better.</p>
-          <span class="mono step__tag">Gets smarter</span>
+          <span class="mono step__tag">Improves every job</span>
         </article>
       </div>
     </div>
@@ -354,7 +355,7 @@
         <p class="footer__tag">A ranked backup bench for the people who keep rentals running.</p>
       </div>
       <div>
-        <h4 class="mono">Product</h4>
+        <h3 class="mono">Product</h3>
         <ul>
           <li><a href="#how">How it works</a></li>
           <li><a href="#scores">Scores</a></li>
@@ -362,14 +363,14 @@
         </ul>
       </div>
       <div>
-        <h4 class="mono">Account</h4>
+        <h3 class="mono">Account</h3>
         <ul>
           <li><a href="login/">Log in</a></li>
           <li><a href="login/?mode=register">Create account</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="mono">Details</h4>
+        <h3 class="mono">Details</h3>
         <ul>
           <li><a href="#problem">Why lists fail</a></li>
           <li><a href="#scores">Scoring rules</a></li>
