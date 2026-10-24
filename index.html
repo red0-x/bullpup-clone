@@ -3,26 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bullpup | Your contractor backup bench</title>
+<title>Bullpen | Your contractor backup bench</title>
 <meta name="description" content="A ranked backup bench of contractors for every rental property and amenity. Snap a photo, get the top three people to call.">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="preload" href="assets/fonts/InterTight-800.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/InstrumentSerif-400i.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body data-testid="landing-page">
+<div class="scroll-progress" aria-hidden="true"><i></i></div>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="nav" data-testid="landing-nav">
   <div class="shell nav__inner">
-    <a class="wordmark" href="./" aria-label="Bullpup home" data-testid="landing-home-link">
-      <span class="wordmark__dot" aria-hidden="true"></span>Bullpup
+    <a class="wordmark" href="./" aria-label="Bullpen home" data-testid="landing-home-link">
+      <img class="wordmark__pup" src="assets/mascot/pup-head.webp" alt="" width="32" height="32">Bullpen
     </a>
     <nav class="nav__links" aria-label="Primary">
       <a href="#how" data-testid="landing-how-link">How it works</a>
       <a href="#scores" data-testid="landing-scores-link">Scores</a>
       <a href="#coverage">Coverage</a>
+      <a href="#channels">Channels</a>
     </nav>
     <div class="nav__actions">
       <a class="nav__login" href="login/" data-testid="landing-login-button">Log in</a>
@@ -44,7 +46,7 @@
           </span>
         </h1>
         <p class="hero__sub" data-reveal style="--d:120ms">
-          Bullpup keeps a ranked bench of contractors for every property and amenity.
+          Bullpen keeps a ranked bench of contractors for every property and amenity.
           Photograph the problem, get the three best people to call, and message them in one tap.
         </p>
         <div class="hero__cta" data-reveal style="--d:180ms">
@@ -60,7 +62,9 @@
         </div>
       </div>
 
-      <div class="bench-wrap" data-reveal style="--d:160ms">
+      <div class="hero-art">
+        <img class="hero-art__pup" src="assets/mascot/pup-camera.webp" alt="Bullpen mascot snapping a photo of a repair" width="760" height="773">
+        <div class="bench-wrap" data-reveal style="--d:160ms">
         <article class="bench" aria-label="Example bench for Tahoe Cabin">
           <div class="bench__top">
             <span class="mono">Live bench / Tahoe Cabin</span>
@@ -97,6 +101,7 @@
             <a href="login/">Ask all three <span aria-hidden="true">&rarr;</span></a>
           </div>
         </article>
+        </div>
       </div>
     </div>
   </section>
@@ -127,8 +132,66 @@
     <button class="ticker__pause mono" type="button" aria-pressed="false">Pause</button>
   </div>
 
+
+  <section class="channels" id="channels">
+    <div class="shell channels__head">
+      <div data-reveal>
+        <p class="mono eyebrow">Channels</p>
+        <h2>Already on every <span class="serif">channel.</span></h2>
+      </div>
+      <p data-reveal style="--d:80ms">
+        Your calendar, rates, and guest messages stay in one place, whether the booking
+        came from Airbnb, Vrbo, Booking.com, or your own site.
+      </p>
+    </div>
+
+    <div class="channels__carousel" role="group" aria-label="Supported booking channels">
+      <div class="channels__row">
+        <div class="channels__track">
+          <article class="channel"><span class="channel__mark">A</span><span class="channel__name">Airbnb<small>Booked on Airbnb</small></span></article>
+          <article class="channel"><span class="channel__mark">V</span><span class="channel__name">Vrbo<small>Calendar sync</small></span></article>
+          <article class="channel"><span class="channel__mark">B</span><span class="channel__name">Booking.com<small>Rate sync</small></span></article>
+          <article class="channel"><span class="channel__mark">E</span><span class="channel__name">Expedia<small>Guest messages</small></span></article>
+          <article class="channel"><span class="channel__mark">T</span><span class="channel__name">Tripadvisor<small>Reviews</small></span></article>
+          <article class="channel"><span class="channel__mark">A</span><span class="channel__name">Agoda<small>Global reach</small></span></article>
+          <article class="channel"><span class="channel__mark">M</span><span class="channel__name">Homes &amp; Villas<small>By Marriott Bonvoy</small></span></article>
+        </div>
+        <div class="channels__track" aria-hidden="true">
+          <article class="channel"><span class="channel__mark">A</span><span class="channel__name">Airbnb<small>Booked on Airbnb</small></span></article>
+          <article class="channel"><span class="channel__mark">V</span><span class="channel__name">Vrbo<small>Calendar sync</small></span></article>
+          <article class="channel"><span class="channel__mark">B</span><span class="channel__name">Booking.com<small>Rate sync</small></span></article>
+          <article class="channel"><span class="channel__mark">E</span><span class="channel__name">Expedia<small>Guest messages</small></span></article>
+          <article class="channel"><span class="channel__mark">T</span><span class="channel__name">Tripadvisor<small>Reviews</small></span></article>
+          <article class="channel"><span class="channel__mark">A</span><span class="channel__name">Agoda<small>Global reach</small></span></article>
+          <article class="channel"><span class="channel__mark">M</span><span class="channel__name">Homes &amp; Villas<small>By Marriott Bonvoy</small></span></article>
+        </div>
+      </div>
+      <div class="channels__row channels__row--reverse">
+        <div class="channels__track">
+          <article class="channel"><span class="channel__mark">P</span><span class="channel__name">Plum Guide<small>Curated homes</small></span></article>
+          <article class="channel"><span class="channel__mark">V</span><span class="channel__name">Vacasa<small>Property care</small></span></article>
+          <article class="channel"><span class="channel__mark">H</span><span class="channel__name">Houfy<small>Direct community</small></span></article>
+          <article class="channel"><span class="channel__mark">G</span><span class="channel__name">Google Vacation Rentals<small>Search reach</small></span></article>
+          <article class="channel"><span class="channel__mark">D</span><span class="channel__name">Your direct site<small>Direct booking</small></span></article>
+          <article class="channel"><span class="channel__mark">G</span><span class="channel__name">Guesty<small>Channel manager</small></span></article>
+          <article class="channel"><span class="channel__mark">H</span><span class="channel__name">Hostaway<small>Channel manager</small></span></article>
+        </div>
+        <div class="channels__track" aria-hidden="true">
+          <article class="channel"><span class="channel__mark">P</span><span class="channel__name">Plum Guide<small>Curated homes</small></span></article>
+          <article class="channel"><span class="channel__mark">V</span><span class="channel__name">Vacasa<small>Property care</small></span></article>
+          <article class="channel"><span class="channel__mark">H</span><span class="channel__name">Houfy<small>Direct community</small></span></article>
+          <article class="channel"><span class="channel__mark">G</span><span class="channel__name">Google Vacation Rentals<small>Search reach</small></span></article>
+          <article class="channel"><span class="channel__mark">D</span><span class="channel__name">Your direct site<small>Direct booking</small></span></article>
+          <article class="channel"><span class="channel__mark">G</span><span class="channel__name">Guesty<small>Channel manager</small></span></article>
+          <article class="channel"><span class="channel__mark">H</span><span class="channel__name">Hostaway<small>Channel manager</small></span></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="problem">
     <div class="shell">
+      <img class="section-mascot" src="assets/mascot/pup-sniff.webp" alt="" width="858" height="737">
       <div class="section__head">
         <div data-reveal>
           <p class="mono eyebrow">The problem</p>
@@ -158,7 +221,7 @@
         </div>
       </div>
       <p class="problem__close" data-reveal>
-        You find out with guests two hours away. Bullpup keeps the bench current,
+        You find out with guests two hours away. Bullpen keeps the bench current,
         so the next call is a good one.
       </p>
     </div>
@@ -187,7 +250,7 @@
         <article class="step" data-reveal style="--d:60ms">
           <div class="step__num mono"><span>Step 02</span></div>
           <h3>Confirm the issue</h3>
-          <p>Bullpup drafts the trade, the urgency, and the likely cause. Change anything with one tap.</p>
+          <p>Bullpen drafts the trade, the urgency, and the likely cause. Change anything with one tap.</p>
           <span class="mono step__tag">One tap</span>
         </article>
         <article class="step" data-reveal style="--d:120ms">
@@ -333,10 +396,11 @@
   </section>
 
   <section class="cta" data-testid="landing-cta">
+    <img class="cta__pup" src="assets/mascot/pup-cheer.webp" alt="" width="677" height="743">
     <div class="shell cta__inner" data-reveal>
       <p class="mono eyebrow">Start free</p>
       <h2>Never get caught<br>without a <span class="serif">backup.</span></h2>
-      <p>Load the demo: three properties, eighteen contractors, and the gaps Bullpup finds in seconds.</p>
+      <p>Load the demo: three properties, eighteen contractors, and the gaps Bullpen finds in seconds.</p>
       <div class="cta__actions">
         <a class="btn btn--paper btn--lg" href="login/?mode=register" data-testid="cta-get-started-button">
           Start my bench <span class="btn__arrow" aria-hidden="true">&rarr;</span>
@@ -351,8 +415,9 @@
   <div class="shell">
     <div class="footer__grid">
       <div>
-        <a class="wordmark" href="./"><span class="wordmark__dot" aria-hidden="true"></span>Bullpup</a>
+        <a class="wordmark" href="./"><img class="wordmark__pup" src="assets/mascot/pup-head.webp" alt="" width="32" height="32">Bullpen</a>
         <p class="footer__tag">A ranked backup bench for the people who keep rentals running.</p>
+        <img class="footer__pup" src="assets/mascot/pup-sleep.webp" alt="" width="620" height="567">
       </div>
       <div>
         <h3 class="mono">Product</h3>
@@ -360,6 +425,7 @@
           <li><a href="#how">How it works</a></li>
           <li><a href="#scores">Scores</a></li>
           <li><a href="#coverage">Coverage</a></li>
+          <li><a href="#channels">Channels</a></li>
         </ul>
       </div>
       <div>
@@ -378,8 +444,8 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <span>Demo uses made-up sample data. Bullpup never sends messages for you.</span>
-      <span>&copy; 2026 Bullpup</span>
+      <span>Demo uses made-up sample data. Bullpen never sends messages for you. Platform names are trademarks of their owners.</span>
+      <span>&copy; 2026 Bullpen</span>
     </div>
   </div>
 </footer>

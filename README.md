@@ -1,10 +1,10 @@
-# Bullpup
+# Bullpen
 
-A modern, hand-built static redesign of the Bullpup landing page and login screen.
+A modern, hand-built static redesign of the Bullpen landing page and login screen.
 Original concept from <https://try-bullpup.emergent.host/>.
 
-Design: editorial black and white with a chestnut accent, large Inter Tight display
-type, Instrument Serif italic emphasis, IBM Plex Mono labels. No mascots, no gradients,
+Design: warm coffee palette, Bricolage Grotesque display type (same family as the
+original concept), Onest body, Instrument Serif italic emphasis, IBM Plex Mono labels. No mascots, no gradients,
 no rounded card soup.
 
 ## Local preview
