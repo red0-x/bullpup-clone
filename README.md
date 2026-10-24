@@ -4,8 +4,8 @@ A modern, hand-built static redesign of the Bullpen landing page and login scree
 Original concept from <https://try-bullpup.emergent.host/>.
 
 Design: warm coffee palette, Bricolage Grotesque display type (same family as the
-original concept), Onest body, Instrument Serif italic emphasis, IBM Plex Mono labels. No mascots, no gradients,
-no rounded card soup.
+original concept), Onest body, Instrument Serif italic emphasis, IBM Plex Mono labels. Bullpen mascot art, soft rounded cards,
+and scroll-driven reveals without gradient soup.
 
 ## Local preview
 
