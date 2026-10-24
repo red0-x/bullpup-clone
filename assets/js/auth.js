@@ -12,10 +12,8 @@
 
   function setMode(mode, push) {
     var register = mode === "register";
-    tabLogin.setAttribute("aria-selected", String(!register));
-    tabRegister.setAttribute("aria-selected", String(register));
-    tabLogin.tabIndex = register ? -1 : 0;
-    tabRegister.tabIndex = register ? 0 : -1;
+    tabLogin.setAttribute("aria-pressed", String(!register));
+    tabRegister.setAttribute("aria-pressed", String(register));
     title.textContent = register ? "Create your bench" : "Welcome back";
     sub.textContent = register
       ? "Two backups per property. Free for 1 to 5 rentals."
