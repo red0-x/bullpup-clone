@@ -59,6 +59,7 @@ button, input { font: inherit; color: inherit; }
   padding: 12px 18px;
 }
 .skip:focus { left: 12px; top: 12px; }
+main:focus, #auth-form:focus { outline: none; }
 
 .shell {
   width: 100%;
@@ -767,8 +768,8 @@ a.wordmark:hover .wordmark__dot { transform: rotate(225deg); }
 .auth__brand::after {
   content: "";
   position: absolute;
-  left: -120px;
-  bottom: -180px;
+  left: -220px;
+  bottom: -520px;
   width: 440px;
   height: 440px;
   border: 1px solid rgba(250, 248, 245, 0.16);
